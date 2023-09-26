@@ -1,0 +1,232 @@
+#include <iostream>
+#include<cmath>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Hola este es un programa para hacer ecuaciones:)"<<endl;
+    std::cout << "escoge entre las siguientes ecuaciones" << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << " [a]y=√(9-x²)" << std::endl;
+    std::cout << " [b]y=√(16-x²)" << std::endl;
+    std::cout << " [c]y=1/(x-2)" << std::endl;
+    std::cout << " [d]y=1/(x²-9)" << std::endl;
+    std::cout << " [e]y=1/(x²+4)" << std::endl;
+    std::cout << "" << std::endl;
+    std::cout << "-Escoge una letra" << std::endl;
+    
+    char letra;
+    std::cin >> letra;
+    
+   switch (letra){
+       case 'z':
+       std::cout << "izzi" << std::endl;
+       break;
+    case 'a':
+        std::cout << "" << std::endl;
+        std::cout << "La ecuación es:" << std::endl;
+        cout << " y=√(9-x²)" << std::endl;
+            std::cout << "Rango de [-100,100]" << std::endl;
+            int xa;
+            std::cout << "-Escriba el inicio del rango" << std::endl;
+            std::cin >> xa;
+            int ya;
+            std::cout << "-Escriba el final del rango" << std::endl;
+            std::cin >> ya;
+            std::cout << "_________" << std::endl;
+            std::cout << " x | y " << std::endl;
+                
+                int la;
+                int ra;
+                if (xa<ya){
+                la=xa;
+                ra=ya;
+            } else {
+                la=ya;
+                ra=xa;
+            }
+                
+                for(double a=la;a<=ra;a++)
+                
+                {
+                    double e; 
+                    double i;
+                    e=9-(a*a);
+                    i=sqrt(e);
+                    
+                    if (i>0){
+                    
+                    cout << a << " | " << i << endl;
+                    
+                    }
+                   
+                }
+            
+        break; 
+    case 'm':  
+    std::cout << "hola soy manu :)" << std::endl;
+        break;
+    case 'b':
+        std::cout << "" << std::endl;
+        std::cout << "La ecuación es:" << std::endl;
+        cout << " y=√(16-x²)" << std::endl;
+            std::cout << "Rango de [-100,100]" << std::endl;
+            int xb;
+            std::cout << "-Escriba el inicio del rango" << std::endl;
+            std::cin >> xb;
+            int yb;
+            std::cout << "-Escriba el final del rango" << std::endl;
+            std::cin >> yb;
+            std::cout << "_________" << std::endl;
+            std::cout << " x | y " << std::endl;
+                
+                int lb;
+                int rb;
+                if (xb<yb){
+                lb=xb;
+                rb=yb;
+            } else {
+                lb=yb;
+                rb=xb;
+            }
+                
+                for(double a=lb;a<=rb;a++)
+                
+                {
+                    double e; 
+                    double i;
+                    e=16-(a*a);
+                    i=sqrt(e);
+                    
+                    if (i>0){
+                        
+                    cout << a << " | " << i << endl;
+                   
+                    }
+                }
+            
+        break; 
+    case 'c':
+        std::cout << "" << std::endl;
+        std::cout << "La ecuación es:" << std::endl;
+        cout << " y=1/(x-2)" << std::endl;
+            std::cout << "Rango de [-100,100]" << std::endl;
+            int xc;
+            std::cout << "-Escriba el inicio del rango" << std::endl;
+            std::cin >> xc;
+            int yc;
+            std::cout << "-Escriba el final del rango" << std::endl;
+            std::cin >> yc;
+            std::cout << "_________" << std::endl;
+            std::cout << " x | y " << std::endl;
+                
+                int lc;
+                int rc;
+                if (xc<yc){
+                lc=xc;
+                rc=yc;
+            } else {
+                lc=yc;
+                rc=xc;
+            }
+                
+                for(double a=lc;a<=rc;a++)
+                
+                {
+                    double e; 
+                    double i;
+                    e=(a-2);
+                    i=1/e;
+                    
+                    if (e!=0){
+                        
+                    cout << a << " | " << "1/" << e << endl;
+                    
+                    }
+                   
+                }
+            
+        break; 
+    case 'd':
+        std::cout << "" << std::endl;
+        std::cout << "La ecuación es:" << std::endl;
+        cout << " y=1/(x²-9)" << std::endl;
+            std::cout << "Rango de [-100,100]" << std::endl;
+            int xd;
+            std::cout << "-Escriba el inicio del rango" << std::endl;
+            std::cin >> xd;
+            int yd;
+            std::cout << "-Escriba el final del rango" << std::endl;
+            std::cin >> yd;
+            std::cout << "_________" << std::endl;
+            std::cout << " x | y " << std::endl;
+                
+                int ld;
+                int rd;
+                if (xd<yd){
+                ld=xd;
+                rd=yd;
+            } else {
+                ld=yd;
+                rd=xd;
+            }
+                
+                for(double a=ld;a<=rd;a++)
+                
+                {
+                    double e; 
+                    double i;
+                    e=(a*a)-9;
+                    i=1/e;
+                    
+                    if (e!=0){
+                    
+                    cout << a << " | " << "1/" << e << endl;
+                    }
+                }
+            
+        break; 
+    case 'e':
+        std::cout << "" << std::endl;
+        std::cout << "La ecuación es:" << std::endl;
+        cout << " y=1/(x²+4)" << std::endl;
+            std::cout << "Rango de [-100,100]" << std::endl;
+            int xe;
+            std::cout << "-Escriba el inicio del rango" << std::endl;
+            std::cin >> xe;
+            int ye;
+            std::cout << "-Escriba el final del rango" << std::endl;
+            std::cin >> ye;
+            std::cout << "_________" << std::endl;
+            std::cout << " x | y " << std::endl;
+                
+                int le;
+                int re;
+                if (xe<ye){
+                le=xe;
+                re=ye;
+            } else {
+                le=ye;
+                re=xe;
+            }
+                
+                for(double a=le;a<=re;a++)
+                
+                {
+                    double e; 
+                    double i;
+                    e=(a*a)+4;
+                    i=1/e;
+                    cout << a << " | " << "1/" << e << endl;
+                   
+                }
+            
+        break; 
+        
+        default: 
+            std::cout << "" << std::endl;
+            std::cout << "...Adios..." << std::endl;
+    }
+    return 0;
+}
